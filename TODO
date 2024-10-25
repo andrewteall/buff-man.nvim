@@ -1,0 +1,44 @@
+
+-- FEATURE: Add Cursor Position to line format options
+    -- BUG:  Buffer order doesn't work when getting cursor position
+    -- BUG:  Fix Line numbers disappearing in some cases
+-- FEATURE: Add Tab Page filtering and add Tab Page to line format
+-- FEATURE: Preview Buffer
+-- FEATURE: Error line in App
+-- FEATURE: Add More placement options and configuration
+-- FEATURE: Add exclusion for filetypes and buffer types or certain buffers
+-- FEATURE: Change placement shortcut keys
+-- FEATURE: Adjust buffer line format to compact when the window is too narrow
+-- FEATURE: Convert input win to use built-in prompt and fix input line being statically set to the second line in process_user_input.
+-- FEATURE: Open Buffer Manager in Splits - Add Autoclose Disable Option
+-- FEATURE: Allow creating new buffers in mark mode taht are immediately marked
+-- FEATURE: Add "write-all" command to Buffer Manager
+-- FEATURE: Better Error Handling
+-- FIXME:   Move Highlights to config. Add Highlight names to config.
+
+-- TODO: Clean up options/config
+-- TODO: Better Error Handling
+-- TODO: Testing
+-- TODO: README
+-- TODO: Help file
+
+setup
+open_buffer_manager
+    refresh_buffer_list_window
+        format_buffer_list
+    set_autogroup_commands
+        close_buffer_manager
+        close_input_window
+    set_keymaps_for_buffer_manager
+        process_action
+            refresh_buffer_list_window
+            toggle_help
+            prompt_user_input
+                process_action
+            open_input_window
+                set_keymaps_for_input_buffer
+                    process_user_input
+                        process_action
+                        close_input_window
+                    close_input_window
+

@@ -17,7 +17,7 @@ You can install Buff-Man.nvim with your plugin manager of choice. If you use
 ```lua
 -- Lua
 return {
-  dir = 'andrewteall/buff-man.nvim',
+  'andrewteall/buff-man.nvim',
   opts = {}
 }
 ```

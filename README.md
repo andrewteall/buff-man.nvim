@@ -2,6 +2,7 @@
 
 Buff-Man.nvim is a full featured buffer manager for Neovim.
 
+![image](https://github.com/user-attachments/assets/fbffe90f-8947-4afc-b005-cb271c013d64)
 ## Requirements
 
 - Neovim ≥ v0.9

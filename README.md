@@ -1,4 +1,4 @@
-# Buff-Man.nvim 󱅝 
+# Buff-Man.nvim
 
 Buff-Man.nvim is a full featured buffer manager for Neovim.
 

@@ -15,4 +15,5 @@
 -- FEATURE: Add "write-all" command to Buffer Manager
 -- FEATURE: Better Error Handling
 -- FIXME:   Move Highlights to config. Add Highlight names to config.
+-- FIXME:   Fix setting title for the Mark Manager Window
 

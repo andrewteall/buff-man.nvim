@@ -174,7 +174,7 @@ local function refresh_buffer_manager_win(reset_cursor)
         ui.set_win_title(buffer_list_win.handle, " Mark Manager ")
         buf_list = mark.list()
     else
-        ui.set_win_title(buffer_list_win.handle, " Buffer Manager ")
+        ui.set_win_title(buffer_list_win.handle, config.get_buffer_list_value("title"))
         config.set_mode("buffer")
         local ordering = config.get_runtime_option("buffer_list_ordering")
         buf_list = buffer.list(tostring(ordering))

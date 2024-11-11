@@ -352,8 +352,8 @@ commands and toggle a file being marked outside of the Buffer Window with the
 
 A typical use case is to map one of all of these to a keymap.
 
-When the Buffer Manager is open you can use "<ESC>" to close the window and "?"
-to show the help window. Neither of the keymaps can be remapped in the
+When the Buffer Manager is open you can use "\<ESC\>" to close the window and
+"?" to show the help window. Neither of the keymaps can be remapped in the
 configureation to provide a way to always close the window and show the help.
 
 ## License
